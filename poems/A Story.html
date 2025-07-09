@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>故事 | Poetry Collection</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-color: #fffaed;
+            font-family: "Songti SC", "STSong", "宋体", SimSun, serif;
+            color: #2c2c2c;
+            line-height: 1.8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 2rem;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .poetry-header {
+            text-align: center;
+            margin: 3rem 0;
+            position: relative;
+        }
+
+        .poetry-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-weight: normal;
+            color: #1a1a1a;
+            letter-spacing: 0.1em;
+        }
+
+        .poetry-content {
+            font-size: 1.2rem;
+            line-height: 2.2;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .poetry-section {
+            margin-bottom: 2.5rem;
+            position: relative;
+        }
+
+        .poetry-footer {
+            text-align: center;
+            margin-top: 4rem;
+            font-family: "Songti SC", "STSong", "宋体", SimSun, serif;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .back-link {
+            position: fixed;
+            top: 2rem;
+            left: 2rem;
+            text-decoration: none;
+            color: #666;
+            font-family: "Songti SC", "STSong", "宋体", SimSun, serif;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: #1a1a1a;
+        }
+
+        .decorative-line {
+            width: 100px;
+            height: 1px;
+            background: #666;
+            margin: 2rem auto;
+            opacity: 0.3;
+        }
+
+        .poem-preview {
+            position: absolute;
+            background: rgba(252, 249, 242, 0.95);
+            padding: 1rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            opacity: 0;
+            transition: all 0.3s ease;
+            pointer-events: none;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            backdrop-filter: blur(5px);
+            transform: translateX(-50%);
+            left: 50%;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .poetry-title {
+                font-size: 1.8rem;
+            }
+            
+            .back-link {
+                position: static;
+                display: block;
+                text-align: center;
+                margin: 1rem auto;
+            }
+
+            .poetry-content {
+                font-size: 1.1rem;
+                padding: 0 0.5rem;
+            }
+        }
+
+        /* 为Markdown内容添加的额外样式 */
+        .poetry-content h1 {
+            display: none;
+        }
+
+        .poetry-content h2 {
+            font-size: 1.3rem;
+            margin: 2rem 0 1.2rem;
+            color: #333;
+            font-weight: normal;
+        }
+
+        .poetry-content p {
+            margin: 1.2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <a href="../poetic.html" class="back-link">← 返回首页</a>
+    
+    <div class="container">
+        <header class="poetry-header">
+            <h1 class="poetry-title">故事</h1>
+            <div class="decorative-line"></div>
+        </header>
+
+        <main class="poetry-content" id="poetry-content">
+            <div class="poetry-section">他喜欢被拥抱着。<br>她喜欢把他拥抱。<br>她给他两个词，“呢喃低语”和“倾斜”，<br>“编个故事给我吧”，她说。</div><div class="poetry-section">于是，他讲了这样一个故事：<br>从前，有两棵树，<br>挨着一起长，<br>因为太阳刚好在他们俩中间照，<br>所以长着长着<br>他们的树干就斜了，<br>所以<br>每当风吹过来，<br>他们的枝梢树叶彼此轻触，<br>就如同，呢喃低语。</div><div class="poetry-section">。。。<br>。。。</div><div class="poetry-section">她思索了良久，<br>也讲了一个故事：<br>邦妮和库库在玩具商场的大长廊的两端，<br>玩具商场里都是可爱的玩具，入口就是库库，一只小恐龙；<br>出口是邦妮，一只小猫咪。</div><div class="poetry-section">小恐龙是塑料的，空心，但是有可以动的机械的四肢；<br>小猫咪是毛绒的，里面塞满了软软的棉花。<br>有个调皮的男孩走到玩具大长廊的尽头的收银台之前时，终于决定不要小恐龙了，<br>于是就把库库随手放到了邦妮的旁边，<br>于是，<br>这两个小家伙就这么相识了。</div><div class="poetry-section">小恐龙和小猫咪说着不同的语言，<br>对于这个世界有着不同的感知方式。<br>小恐龙拆下自己的一个关节，把它安到小猫咪身上，<br>小猫咪把身体里的棉花团子塞到小恐龙的关节和空空的身子里。<br>从此他们终于，<br>可以柔软地彼此拥抱，<br>可以温柔地低声呢喃。</div>
+        </main>
+
+        <footer class="poetry-footer">
+            <div class="decorative-line"></div>
+            <p>「梦境絮语」诗集</p>
+        </footer>
+    </div>
+</body>
+</html>
