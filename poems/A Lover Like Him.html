@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>像他这样的爱人 | Poetry Collection</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-color: #fffaed;
+            font-family: "Songti SC", "STSong", "宋体", SimSun, serif;
+            color: #2c2c2c;
+            line-height: 1.8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 2rem;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .poetry-header {
+            text-align: center;
+            margin: 3rem 0;
+            position: relative;
+        }
+
+        .poetry-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-weight: normal;
+            color: #1a1a1a;
+            letter-spacing: 0.1em;
+        }
+
+        .poetry-content {
+            font-size: 1.2rem;
+            line-height: 2.2;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .poetry-section {
+            margin-bottom: 2.5rem;
+            position: relative;
+        }
+
+        .poetry-footer {
+            text-align: center;
+            margin-top: 4rem;
+            font-family: "Songti SC", "STSong", "宋体", SimSun, serif;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .back-link {
+            position: fixed;
+            top: 2rem;
+            left: 2rem;
+            text-decoration: none;
+            color: #666;
+            font-family: "Songti SC", "STSong", "宋体", SimSun, serif;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: #1a1a1a;
+        }
+
+        .decorative-line {
+            width: 100px;
+            height: 1px;
+            background: #666;
+            margin: 2rem auto;
+            opacity: 0.3;
+        }
+
+        .poem-preview {
+            position: absolute;
+            background: rgba(252, 249, 242, 0.95);
+            padding: 1rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            opacity: 0;
+            transition: all 0.3s ease;
+            pointer-events: none;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            backdrop-filter: blur(5px);
+            transform: translateX(-50%);
+            left: 50%;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .poetry-title {
+                font-size: 1.8rem;
+            }
+            
+            .back-link {
+                position: static;
+                display: block;
+                text-align: center;
+                margin: 1rem auto;
+            }
+
+            .poetry-content {
+                font-size: 1.1rem;
+                padding: 0 0.5rem;
+            }
+        }
+
+        /* 为Markdown内容添加的额外样式 */
+        .poetry-content h1 {
+            display: none;
+        }
+
+        .poetry-content h2 {
+            font-size: 1.3rem;
+            margin: 2rem 0 1.2rem;
+            color: #333;
+            font-weight: normal;
+        }
+
+        .poetry-content p {
+            margin: 1.2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html" class="back-link">← 返回首页</a>
+    
+    <div class="container">
+        <header class="poetry-header">
+            <h1 class="poetry-title">像他这样的爱人</h1>
+            <div class="decorative-line"></div>
+        </header>
+
+        <main class="poetry-content" id="poetry-content">
+            <div class="poetry-section">他是这样一个爱人，这个爱人和她一样，沉默、胆怯、害羞，从来不擅长拒绝，也从来不擅长主动。<br>他们生活在欧亚大陆的两头：在今年的2月份，她回浙北一个乡下亲戚家门口的水泥地上逗狗玩，而就在那几天里，他正和几个好友到阿姆斯特丹的一个涂鸦公园玩滑梯。</div><div class="poetry-section">后来，后来，他们坐在柏林的一家粤式茶餐厅里。他打开相机给她看他今年2月份的照片，还有他18年在台北做交换生，随后在日本、香港、还有印度旅行的照片。</div><div class="poetry-section">他在回忆他那漫长和充满新奇的旅行的时候，轻描淡写、近乎平静，给她感觉，像云朵一样优雅，<br>——他用他那温柔的身体抚摩着起起伏伏的地面和上头的每一个行人，却依旧捎着他那嘴轻快的口哨，轻盈地飘啊，飘啊。</div>
+        </main>
+
+        <footer class="poetry-footer">
+            <div class="decorative-line"></div>
+            <p>「梦境絮语」诗集</p>
+        </footer>
+    </div>
+</body>
+</html>
